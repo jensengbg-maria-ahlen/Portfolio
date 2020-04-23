@@ -24,7 +24,7 @@ io.on('connection', (socket) => {
 
 //Add info to the database
 db.defaults({ person: [] }).write();
-//db.get('person').push({ FirstName: 'Maria', LastName: 'Åhlén', YearOfBirth: 1993, MonthOfBirth: 'November', DayOfBirth: 13 }).write();
+db.get('person').push({ FirstName: 'Maria', LastName: 'Åhlén', YearOfBirth: 1993, MonthOfBirth: 'November', DayOfBirth: 13 }).write();
 
 
 http.listen(8000, () => {
